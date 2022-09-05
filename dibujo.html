@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Primer dibujo con Canvas</title>
+    <style>
+    .content {
+      max-width: 500px;
+      margin: auto;
+    }
+    body{
+        font-family: "Trebuchet MS";
+        background-color: #F4F2F3;
+        color: #64766A;
+    }
+    </style>
+</head>
+<body>
+    <div class="content">
+    <h1>Dibujo en Canvas</h1>
+    <form>
+        <p>¿Cuántas líneas quieres? <br>
+        <input type="text" id="cliente_lineas" />
+        <input type="button" value="Iniciar" id="cliente_iniciar" />
+        <input type="button" value="Borrar" id="cliente_borrar" /> <br>
+        <input type="reset" value="Restaurar" />
+        </p>
+    </form>
+    <canvas width=300 height=300 id="dibujo1">
+    </canvas>
+    <p>Así queda tu dibujo</p>
+    <script src="dibujo.js"></script>
+    </div>
+</body>
+</html>

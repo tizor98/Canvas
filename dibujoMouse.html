@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>¡Dibuja tu mismo!</title>
+    <style>
+    .content {
+      max-width: 500px;
+      margin: auto;
+    }
+    body{
+        font-family: "Trebuchet MS";
+        background-color: #1e2040;
+        color: #FFDFD3;
+    }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>Deja que vuele tu imaginación haciendo el dibujo que quieras</h1>
+    <p>Selecciona el color de tu lapiz:
+        <input type="color" id="colordibujo" /> <br>
+        Vuelve a empezar:
+        <input type="button" value="Reiniciar" id="reiniciarDibujo" />
+    </p>
+    <canvas width=800 height=300 id="dibujo1">
+    </canvas>
+    <p> <strong>Nota:</strong> Presiona y desliza el mouse en la zona negra para dibujar</p>
+    <script src="dibujoMouse.js"></script>
+</div>
+</body>
+</html>
